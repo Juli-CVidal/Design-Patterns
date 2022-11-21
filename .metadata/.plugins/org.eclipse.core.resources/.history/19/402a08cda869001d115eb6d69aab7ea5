@@ -28,7 +28,6 @@ public class Menu {
 				break;
 			
 			case 2: // DELETE AN ITEM
-				System.out.println(cart);
 				cart.removeItem(Input.askString(Constants.ASK_ITEM_NAME));
 				break;
 			case 3: //PAY
@@ -72,5 +71,4 @@ public class Menu {
 			cart.getItems().clear();
 		}while (EXIT_OPTION != option);
 	}
-	
 }

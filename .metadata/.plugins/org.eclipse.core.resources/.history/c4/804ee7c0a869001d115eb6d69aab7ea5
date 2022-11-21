@@ -16,6 +16,7 @@ public class Constants {
 	public static final String ASK_ITEM_PRICE = "Enter the price of the product: ";
 	public static final String ASK_POSITIVE_VALUE = "Please enter a positive value: ";
 			
+	public static final String INVALID_OPTION = "Invalid option, retry.";
 	
 	public static final String EMPTY_CART = "The cart is empty, nothing to pay";
 	

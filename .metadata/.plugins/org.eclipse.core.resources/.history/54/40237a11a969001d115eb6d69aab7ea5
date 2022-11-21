@@ -72,5 +72,4 @@ public class Menu {
 			cart.getItems().clear();
 		}while (EXIT_OPTION != option);
 	}
-	
 }

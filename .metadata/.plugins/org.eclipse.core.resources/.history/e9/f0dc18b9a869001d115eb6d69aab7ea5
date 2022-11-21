@@ -17,8 +17,12 @@ public class Menu {
 			System.out.println(Constants.MAIN_MENU_OPTIONS);
 			option = Input.askInteger(Constants.ASK_OPTION);
 			System.out.println("");
-			
+			if (EXIT_OPTION == option) {
+				continue;
+			}
+
 			if (0 >= option || EXIT_OPTION <= option) {
+				System.out.println(Constants.INVALID_OPTION);
 				continue;
 			}
 
@@ -28,7 +32,6 @@ public class Menu {
 				break;
 			
 			case 2: // DELETE AN ITEM
-				System.out.println(cart);
 				cart.removeItem(Input.askString(Constants.ASK_ITEM_NAME));
 				break;
 			case 3: //PAY
@@ -72,5 +75,4 @@ public class Menu {
 			cart.getItems().clear();
 		}while (EXIT_OPTION != option);
 	}
-	
 }
