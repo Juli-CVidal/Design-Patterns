@@ -1,0 +1,9 @@
+package Services;
+
+import java.util.List;
+
+import Entities.Item;
+
+public class ShoppingCartService {
+	
+}

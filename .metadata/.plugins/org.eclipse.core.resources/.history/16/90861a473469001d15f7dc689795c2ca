@@ -1,0 +1,17 @@
+package Services;
+
+import Entities.Item;
+import Entities.ShoppingCart;
+
+public class ShoppingCartService {
+	
+	
+	public void addItem(ShoppingCart cart,Item item) {
+		cart.getItems().add(item);
+	}
+	
+	public void removeItem(ShoppingCart cart, Item item) {
+		cart.getItems().filter(item -> item.getName() != name);
+	}
+	
+}

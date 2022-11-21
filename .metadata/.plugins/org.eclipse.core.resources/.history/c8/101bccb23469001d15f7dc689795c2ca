@@ -1,0 +1,19 @@
+package Entities;
+
+import java.util.List;
+
+import PaymentMethods.Payment;
+import lombok.Data;
+
+@Data
+public class ShoppingCart {
+	private List<Item> items;
+
+	public Double calculateTotal() {
+		return this.items.stream().map(item -> item.getPrice()).reduce(0d, (a, b) -> a + b);
+	}
+
+	public void pay(Payment payment) {
+		payment.pay(calculateTotal());
+	}
+}

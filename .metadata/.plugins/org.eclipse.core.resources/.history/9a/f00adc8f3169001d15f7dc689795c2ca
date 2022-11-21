@@ -1,0 +1,23 @@
+package Entities;
+
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class ShoppingCart {
+	private List<Item> items;
+	
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+	
+	public void removeItem(Item item) {
+		this.items.remove(item);
+	}
+	
+	
+	public Integer calculateTotal() {
+		return this.items.stream().reduce(0, (a.getPrice(),b.getPrice()) -> a + b);
+	}
+}

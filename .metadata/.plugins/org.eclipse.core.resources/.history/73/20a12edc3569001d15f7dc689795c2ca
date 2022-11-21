@@ -1,0 +1,15 @@
+package PaymentMethods;
+
+import lombok.Data;
+
+@Data
+public class PaypalPayment implements Payment{
+	private String email;
+	private String password;
+	
+	
+	@Override
+	public void pay(Double amount) {
+		System.out.println("Paying with Paypal, increase of 5%: " + amount * 1.05);
+	}
+}

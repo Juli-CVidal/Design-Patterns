@@ -1,0 +1,14 @@
+package Services;
+
+import Entities.Item;
+
+public class ItemService {
+	public static Item createItem() {
+
+		Item newItem = new Item();
+		newItem.setName(Input.askString("Enter the name of the product: "));
+		newItem.setPrice(Input.askDouble("And the price: "));
+		
+		return newItem;
+	}
+}

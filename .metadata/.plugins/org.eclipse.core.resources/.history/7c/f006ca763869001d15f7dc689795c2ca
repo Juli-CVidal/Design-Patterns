@@ -1,0 +1,40 @@
+package Utils;
+
+import Constants.Constants;
+import Entities.ShoppingCart;
+import Services.Input;
+import Services.ItemService;
+import Services.ShoppingCartService;
+
+public class Menu {
+	
+	private final ShoppingCartService shoppingCartService = ShoppingCartService.getInstance();
+	private final ItemService itemService = ItemService.getInstance();
+	
+	
+	public void MainMenu(ShoppingCart cart) {
+		Integer option;
+		final Integer EXIT_OPTION = 4;
+		
+		do {
+			System.out.println(Constants.MAIN_MENU_OPTIONS);
+			option = Input.askInteger(Constants.ASK_OPTION);
+			if (EXIT_OPTION == option) {
+				continue;
+			}
+			
+			if (0 >= option || EXIT_OPTION < option) {
+				System.out.println(Constants.INVALID_OPTION);
+				continue;
+			}
+			
+			
+			switch (option) {
+			case 1: //ADD AN ITEM
+				shoppingCartService.addItem(cart);
+			}
+			
+		}while(EXIT_OPTION != option);
+		
+	}
+}

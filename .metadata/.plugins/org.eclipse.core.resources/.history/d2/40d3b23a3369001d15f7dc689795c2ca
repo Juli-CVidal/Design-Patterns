@@ -1,0 +1,17 @@
+package Services;
+
+import java.util.Scanner;
+
+public class Input {
+	private static final Scanner INPUT = new Scanner(System.in).useDelimiter("\n");
+	
+	public static String askString(String message) {
+		System.out.print(message);
+		return INPUT.next();
+	}
+	
+	public static Double askDouble(String message) {
+		System.out.print(message);
+		return INPUT.nextDouble();
+	}
+}

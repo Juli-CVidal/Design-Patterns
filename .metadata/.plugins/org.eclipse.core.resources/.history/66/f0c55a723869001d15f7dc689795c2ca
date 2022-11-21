@@ -1,0 +1,17 @@
+package Services;
+
+
+
+public class ShoppingCartService {
+	
+	private static ShoppingCartService instance;
+	
+	public static ShoppingCartService getInstance() {
+		if (instance == null) {
+			instance = new ShoppingCartService();
+		}
+		return instance;
+	}
+	
+	
+}

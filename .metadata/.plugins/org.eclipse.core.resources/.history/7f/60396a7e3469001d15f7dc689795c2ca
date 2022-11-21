@@ -1,0 +1,19 @@
+package Services;
+
+import Entities.Item;
+import Entities.ShoppingCart;
+
+public class ShoppingCartService {
+	
+	
+	public void addItem(ShoppingCart cart,Item item) {
+		cart.getItems().add(item);
+	}
+	
+	public void removeItem(ShoppingCart cart) {
+		String itemName = Input.askString("Enter the name of the item: ");
+		
+		cart.getItems().stream().filter(item -> item.getName() != itemName);
+	}
+	
+}

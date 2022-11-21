@@ -1,0 +1,22 @@
+package Entities;
+
+import java.util.List;
+
+import Constants.Constants;
+import Services.Input;
+import Services.ItemService;
+import lombok.Data;
+
+@Data
+public class ShoppingCart {
+	private List<Item> items;
+	
+	
+	public void addItem(Item item) {
+		items.add(item);
+	}
+	
+	public void removeItem(String itemName) {
+		items.stream().filter(item -> item.getName() != itemName);
+	}
+}

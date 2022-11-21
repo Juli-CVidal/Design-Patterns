@@ -1,0 +1,13 @@
+package Utils;
+
+public class Menu {
+	public static void MainMenu() {
+		Integer option;
+		final Integer EXIT_OPTION = 4;
+		
+		do {
+			
+		}while(EXIT_OPTION != option);
+		
+	}
+}
