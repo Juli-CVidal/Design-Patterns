@@ -1,5 +1,0 @@
-package Services;
-
-public class ShoppingCartService {
-	public void addItem(Item item)
-}

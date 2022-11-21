@@ -1,7 +1,0 @@
-package Utils;
-
-public class Menu {
-	public static void MainMenu() {
-		Integer option;
-	}
-}

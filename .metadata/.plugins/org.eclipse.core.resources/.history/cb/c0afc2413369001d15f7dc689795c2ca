@@ -1,9 +1,0 @@
-package Services;
-
-import Entities.Item;
-
-public class ItemService {
-	public Item createItem() {
-		String name = Input.askString("Enter the name of the product: ");
-	}
-}
