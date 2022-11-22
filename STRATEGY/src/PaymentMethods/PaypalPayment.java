@@ -1,9 +1,7 @@
 package PaymentMethods;
 
 import Constants.Constants;
-import lombok.Data;
 
-@Data
 public class PaypalPayment implements Payment{
 	@Override
 	public void pay(Double amount) {
