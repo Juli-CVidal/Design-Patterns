@@ -1,5 +1,6 @@
 package Utils;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -57,20 +58,17 @@ public class Menu {
 	}
 	
 	private static Payment selectPaymentMethod() {
-		final List<Payment> PAYMENT_METHODS = Arrays.asList(new CreditCardPayment(), new PaypalPayment());
+		final ArrayList<Payment> PAYMENT_METHODS = new ArrayList<>(Arrays.asList(new CreditCardPayment(), new PaypalPayment()));
 		Integer option;
-		final Integer EXIT_OPTION = 3;
 		
 		
 		do {
 			System.out.println(Constants.PAYMENT_OPTIONS);
 			option = Input.askInteger(Constants.ASK_OPTION);
+			option--;
 			System.out.println("");
 			
-			if (0 >= option || EXIT_OPTION <= option) {
-				continue;
-			}
-		} while (EXIT_OPTION != option);
+		} while (PAYMENT_METHODS.size() <= option && 0 >= option);
 		
 		return PAYMENT_METHODS.get(option);
 	}
