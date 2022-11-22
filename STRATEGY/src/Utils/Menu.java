@@ -51,8 +51,8 @@ public class Menu {
 			return;
 		}
 		System.out.println(cart);
-		
-		cart.pay(selectPaymentMethod());
+		Payment paymentMethod = selectPaymentMethod();
+		cart.pay(paymentMethod);
 		cart.getItems().clear();
 	}
 	
