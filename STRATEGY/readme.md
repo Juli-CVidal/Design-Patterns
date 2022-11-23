@@ -10,5 +10,5 @@ Regardless of the method selected, the call to pay _will be the same_ : `cart.pa
 
 #### Preview: 
 <div>
-  <img src="https://github.com/Juli-CVidal/Design-Patterns/blob/master/STRATEGY/Strategy%20Pattern.png"/>
+  <img src="https://github.com/Juli-CVidal/Design-Patterns/blob/master/STRATEGY/Strategy.png"/>
  </div>
