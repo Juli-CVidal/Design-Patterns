@@ -2,10 +2,10 @@ package Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import Constants.Constants;
 import Entities.ShoppingCart;
+import PaymentMethods.CashPayment;
 import PaymentMethods.CreditCardPayment;
 import PaymentMethods.Payment;
 import PaymentMethods.PaypalPayment;
@@ -58,7 +58,8 @@ public class Menu {
 	}
 	
 	private static Payment selectPaymentMethod() {
-		final ArrayList<Payment> PAYMENT_METHODS = new ArrayList<>(Arrays.asList(new CreditCardPayment(), new PaypalPayment()));
+		final ArrayList<Payment> PAYMENT_METHODS = new ArrayList<>(Arrays.asList(new CashPayment(),
+				new CreditCardPayment(), new PaypalPayment()));
 		Integer option;
 		
 		

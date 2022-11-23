@@ -6,9 +6,10 @@ public class Constants {
 			+ "\n3.Pay"
 			+ "\n4.Cancel";
 	
-	public static final String PAYMENT_OPTIONS = "1.Credit card"
-			+ "\n2.Paypal"
-			+ "\n3.Cancel";
+	public static final String PAYMENT_OPTIONS = "1.Cash"
+			+ "\n2.Credit card"
+			+ "\n3.Paypal"
+			+ "\n4.Cancel";
 	
 	public static final String ASK_OPTION = "Please select an option: ";
 
@@ -19,6 +20,8 @@ public class Constants {
 	
 	public static final String EMPTY_CART = "The cart is empty, nothing to pay";
 	
+	public static final String PAYING_WITH_CASH = "Paying with cash: ";
 	public static final String PAYING_WITH_CREDIT_CARD = "Paying with credit card, increase of 12%: ";
 	public static final String PAYING_WITH_PAYPAL = "Paying with paypal, increase of 7%: ";
+
 }
